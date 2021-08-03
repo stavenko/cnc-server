@@ -6,3 +6,16 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+hyper = { version="0.14", features=["full"]}
+tokio= { version="1", features=["full"]}
+clap = { version = "3.0.0-beta.2"}
+log = "*"
+regex = "*"
+log4rs = "*"
+sha-1 = "0.8"
+base64 = "*"
+bytes = "1"
+tokio-tungstenite = "*"
+futures = { version = "0.3.8", default-features = false, features = ["alloc"] }
+futures-util = { version = "*" }
+routerify = "*"
