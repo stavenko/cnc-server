@@ -8,6 +8,7 @@ edition = "2018"
 [dependencies]
 hyper = { version="0.14", features=["full"]}
 tokio= { version="1", features=["full"]}
+tokio-util = "0.6"
 clap = { version = "3.0.0-beta.2"}
 log = "*"
 regex = "*"
@@ -18,4 +19,9 @@ bytes = "1"
 tokio-tungstenite = "*"
 futures = { version = "0.3.8", default-features = false, features = ["alloc"] }
 futures-util = { version = "*" }
-routerify = "*"
+routerify = "2"
+routerify-websocket = "1"
+derive_more = "*"
+headers = "0.3"
+serde = "*"
+serde_json = "*"

@@ -8,10 +8,11 @@ pub struct InputOptions {
   #[clap(long)]
   pub path_to_compiled_client: String,
   #[clap(long)]
+  pub my_host: String,
+  #[clap(long)]
   pub lcnc_rsh_host: String,
   #[clap(long)]
   pub lcnc_rsh_port: u16,
   #[clap(long)]
   pub temp_ngc_files: String,
 }
-
