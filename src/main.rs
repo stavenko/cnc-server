@@ -12,6 +12,7 @@ mod endpoints;
 mod options;
 mod result;
 mod router;
+mod cnc;
 
 #[tokio::main]
 async fn main() {
