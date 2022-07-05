@@ -8,6 +8,7 @@ pub struct LcncClient {
   recv: UnboundedReceiver<String>
 }
 
+/*
 impl LcncClient {
   pub fn new(host: String, port: u16) -> Self {
     let (sender, recv) = unbounded_channel();
@@ -20,3 +21,4 @@ impl LcncClient {
     }
   }
 }
+*/

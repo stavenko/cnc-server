@@ -15,4 +15,9 @@ pub struct InputOptions {
   pub lcnc_rsh_port: u16,
   #[clap(long)]
   pub temp_ngc_files: String,
+  
+  #[clap(long)]
+  pub ssh_user: String,
+  #[clap(long)]
+  pub cmd: String,
 }

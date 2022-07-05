@@ -16,3 +16,9 @@ pub enum ProtocolUpdates{
   
 }
 
+impl ProtocolUpdates {
+  pub fn json(self) -> String {
+    "".into()
+  }
+}
+

@@ -1,4 +1,4 @@
-plse crate::endpoints;
+use crate::endpoints;
 use crate::options::InputOptions;
 use hyper::Body;
 use routerify::Router;
@@ -9,7 +9,7 @@ pub fn router(
 
   Router::builder()
     .data(input_options)
-    .any_method("/ws", endpoints::upgrade_ws(endpoints::on_ws_connect))
+    .any_method("/ws", endpoints::upgrade(endpoints::on_ws_connect))
     .get("/config.json", endpoints::config)
     .post("/ngc", endpoints::post_ngc_file)
     .any(endpoints::serve_static)
